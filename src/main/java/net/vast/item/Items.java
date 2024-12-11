@@ -13,7 +13,7 @@ import net.vast.VAST;
 public class Items {
 
     public static final Item CHRONOMIUM = registerItem("chronomium", new Item(new Item.Settings()));
-    public static final Item ACTIVATED_CHRONOMIUM = registerItem("activated chronomium", new Item(new Item.Settings()));
+    public static final Item ACTIVATED_CHRONOMIUM = registerItem("activated_chronomium", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VAST.MOD_ID, name), item);
