@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "vast:chronomium"
+              "name": "vast:raw_chronomium"
             }
           ]
         }
