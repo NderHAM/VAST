@@ -10,7 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.vast.VAST;
 
-public class Items {
+public class VastItems {
 
     public static final Item CHRONOMIUM = registerItem("chronomium", new Item(new Item.Settings()));
     public static final Item ACTIVATED_CHRONOMIUM = registerItem("activated_chronomium", new Item(new Item.Settings()));
@@ -27,6 +27,6 @@ public class Items {
     public static void registerItems() {
         VAST.LOGGER.info("the itemmmssss are registeringggg for VAST");
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(Items::customIngredients);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(VastItems::customIngredients);
     }
 }

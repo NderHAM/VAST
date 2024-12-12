@@ -9,13 +9,13 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.vast.VAST;
 
-public class ItemGroups {
+public class VastItemGroups {
     public static final ItemGroup VAST_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(VAST.MOD_ID,"vast"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.vast"))
-                    .icon(() -> new ItemStack(Items.CHRONOMIUM)).entries((displayContext, entries) -> {
-                        entries.add(Items.CHRONOMIUM);
-                        entries.add(Items.ACTIVATED_CHRONOMIUM);
+                    .icon(() -> new ItemStack(VastItems.CHRONOMIUM)).entries((displayContext, entries) -> {
+                        entries.add(VastItems.CHRONOMIUM);
+                        entries.add(VastItems.ACTIVATED_CHRONOMIUM);
                     }).build());
 
     public static void registerItemGroups() {
