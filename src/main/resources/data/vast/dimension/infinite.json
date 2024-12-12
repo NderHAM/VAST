@@ -1,0 +1,10 @@
+{
+  "type": "vast:tardis_dimension_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "vast:tardis",
+      "layers": []
+    }
+  }
+}
