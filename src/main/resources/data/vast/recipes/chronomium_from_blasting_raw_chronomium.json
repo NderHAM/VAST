@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "chronomium",
+  "category": "misc",
+  "ingredient": {
+    "item": "vast:raw_chronomium"
+  },
+  "result": "vast:chronomium",
+  "experience": 0.1,
+  "cookingtime": 100
+}

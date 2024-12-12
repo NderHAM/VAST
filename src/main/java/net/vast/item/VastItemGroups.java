@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.vast.VAST;
+import net.vast.block.VastBlocks;
 
 public class VastItemGroups {
     public static final ItemGroup VAST_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -16,6 +17,9 @@ public class VastItemGroups {
                     .icon(() -> new ItemStack(VastItems.CHRONOMIUM)).entries((displayContext, entries) -> {
                         entries.add(VastItems.CHRONOMIUM);
                         entries.add(VastItems.ACTIVATED_CHRONOMIUM);
+                        entries.add(VastItems.RAW_CHRONOMIUM);
+                        entries.add(VastBlocks.CHRONOMIUM_ORE);
+                        entries.add(VastBlocks.CHRONOMIUM_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

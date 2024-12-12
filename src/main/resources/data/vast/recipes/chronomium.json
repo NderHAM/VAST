@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chronomium",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vast:chronomium_block"
+    }
+  ],
+  "result": {
+    "item": "vast:chronomium",
+    "count": 9
+  }
+}

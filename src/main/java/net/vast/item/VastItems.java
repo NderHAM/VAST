@@ -12,6 +12,7 @@ import net.vast.VAST;
 
 public class VastItems {
 
+    public static final Item RAW_CHRONOMIUM = registerItem("raw_chronomium", new Item(new Item.Settings()));
     public static final Item CHRONOMIUM = registerItem("chronomium", new Item(new Item.Settings()));
     public static final Item ACTIVATED_CHRONOMIUM = registerItem("activated_chronomium", new Item(new Item.Settings()));
 
@@ -19,14 +20,14 @@ public class VastItems {
         return Registry.register(Registries.ITEM, Identifier.of(VAST.MOD_ID, name), item);
     }
 
-    private static void customIngredients(FabricItemGroupEntries entries) {
-        entries.add(CHRONOMIUM);
-        entries.add(ACTIVATED_CHRONOMIUM);
-    }
+    //private static void customIngredients(FabricItemGroupEntries entries) {
+    //    entries.add(CHRONOMIUM);
+    //    entries.add(ACTIVATED_CHRONOMIUM);
+    //}
 
     public static void registerItems() {
         VAST.LOGGER.info("the itemmmssss are registeringggg for VAST");
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(VastItems::customIngredients);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(VastItems::customIngredients);
     }
 }
