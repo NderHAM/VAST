@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 20083232,
+    "separation": 7,
+    "spacing": 8
+  },
+  "structures": [
+    {
+      "structure": "vast:library_corner",
+      "weight": 1
+    }
+  ]
+}
